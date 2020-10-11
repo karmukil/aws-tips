@@ -1,0 +1,76 @@
+INTRODUCTION-
+
+Cloud computing is process of using remote hosted hosted on internet.
+ADVANTAGES-little investment,focus more on app development,requires less workforcs
+eg-netflix amazon googledrive
+
+TYPES OF CLOUD 
+Two kinds of model in cloud computing 
+deployment model-public,private,hybrid
+service model-infrastructure as service,platform as service,software as a service
+
+some companies have data policy so the public cloud is used
+
+SERVICE MODEL-IMPORTANT
+1.infrastructure as service-we will be having access to the whole infrastructure. iaas provides hardware,server,data center.ex EC2
+
+2.platform as a service-access to os is not given
+access is given to the dashboard level,where user uploads the data and rest is taken care by cloud provider software as a service.ex ELASTIC BEANSTALK
+
+3.software as a service-u donot get access to the os or dashboard..access to the software is alone given..ex NETFLIX,FB
+
+what is docker-is a tool using which we can launch os with the minimum size possible
+SERVICE DOMAINS IN AWS
+1-infra as a server 2-paas 3-saas
+COMPUTE
+   AWS EC2-1-elastic compute cloud-a raw server-we can install anything-we can make it a web server,a db server..it can be anything..we can also increase/dec the configuration anytime we want(elastic in nature).
+   ELASTIC BEANSTALK-2-automated version of ec2-it is only web application server..everything is preconfigured..if we say php server it will launch php server & give us dashboard where we can upload what we want.
+   AWS LAMDA-automated version of ec2-it is compte service which lets us run code without managing server.it sees the workload and automatically scales up everything needed for the server.
+   AWS AUTOSCALING-monitors our application and automatically adjusts capacity to maintain steady,predictable performance at lowest possible price.
+   AWS LOADBALANCER-it gives 1 ip address to hit on and automatically analyse were to send request and distributes incoming application across multiple targets like amazon ec2 instances,containers
+   AWS ECR-elastic container registry-its for storing container images-ecr is fully managed docker container registry that makes it easy for developers to store,manage,deploy docker container images
+   AWS ECS-elastic container service-highly scalable,high performance container service that supports docker containers that allows you to easily run and scale containerized applications on aws
+
+STORAGE-
+   AMAZON S3(Simple Storage Service)-it is a object storage service that offers industry leading scalability,data availability,security and performance
+   AMAZON GLACIER-its like s3,it is strictly a backup service,glacier is low cost cloud storage service for data archiving and long-term backup
+   AMAZON ELASTIC FILE SYSTEM-it can be mounted on our OS as a volume..it acts as a shared drive and its also scalable.
+   AWS STORAGE GATEWAY-connects an on-premises software appliance with cloud-based storage.. it also provides data security features
+
+
+   CACHE-is a layer between a client and a web sever
+DATABASE-
+   amazon rds-relational database service-make it easy to set up,operate and scale a relational database in a cloud.
+   amazon dynamo db-nosql database by amazon..this is itself a database unlike rds. 
+   amazon redshift-fast scalable data warehouse that makes it simple and cost effective to analyse all ur data across data warehouse
+   amazon elasticache-it stores frequently accessed data on the cache..so increases the performance.
+
+SECURITY
+   IAM(identity and access management)-used to authenticate users to ur aws account..eg root user can give access to other users to access
+   KMS(key management service)-makes it easy for us to create and manage keys and control the use of encryption acroos a wide range of aws..
+
+SERVICS MANAGEMENT-
+   CLOUD FORMATION-provides a common language for you to describe and provision all infrastructure..with cloud formation everything can be specified in a json file, wer all the resource that i want to launch is specified.
+    this is very useful when we want to replicate our architecture across multiple regions.
+   aws opswork
+   OPSWORK-is a configuration management service that provides managed instances of chef and puppet..chef and puppet are automation platforms
+1.57
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
